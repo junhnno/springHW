@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: springHW
+
+server:
+  port: 8081
