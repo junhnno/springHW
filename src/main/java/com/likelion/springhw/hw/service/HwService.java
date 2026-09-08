@@ -2,6 +2,8 @@ package com.likelion.springhw.hw.service;
 
 import com.likelion.springhw.hw.repository.HwRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import java.util.List;
 
 @Service
@@ -49,6 +51,10 @@ public class HwService {
     //messages/count
     public int getNumMessages() {
         return hwRepository.countMessages();
+    }
+
+    public int divide(int a, int b) {
+        return a/b;
     }
 
 }
