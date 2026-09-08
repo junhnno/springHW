@@ -16,4 +16,9 @@ public class HwRepository {
     public List<String> findAll() {
         return messages;
     }
+
+    public int countMessages() {
+        return messages.size();
+    }
+
 }

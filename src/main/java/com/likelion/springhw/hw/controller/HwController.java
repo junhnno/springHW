@@ -29,4 +29,9 @@ public class HwController {
     public List<String> messages() {
         return hwService.getAllMessages();
     }
+
+    @GetMapping("/messages/count")
+    public int countMessages() {
+        return hwService.getNumMessages();
+    }
 }

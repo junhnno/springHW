@@ -46,4 +46,9 @@ public class HwService {
         return hwRepository.findAll();
     }
 
+    //messages/count
+    public int getNumMessages() {
+        return hwRepository.countMessages();
+    }
+
 }
